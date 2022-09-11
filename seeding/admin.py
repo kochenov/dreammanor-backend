@@ -1,3 +1,12 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import *
+
+
+class VegetableAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name')
+    list_display_links = ('id', 'name')
+    search_fields = ('name', 'description')
+
+
+admin.site.register(Vegetable, VegetableAdmin)
