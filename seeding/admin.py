@@ -17,3 +17,6 @@ class VegetableSortAdmin(admin.ModelAdmin):
 
 admin.site.register(Vegetable, VegetableAdmin)
 admin.site.register(VegetableSort, VegetableSortAdmin)
+
+admin.site.site_title = 'Администрирование DreamManor'
+admin.site.site_header = 'DreamManor: Панель управления'
