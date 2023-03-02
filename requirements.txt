@@ -1,0 +1,6 @@
+alembic
+aiomysql
+fastapi[all]
+fastapi-users[sqlalchemy]
+python-dotenv
+sqlalchemy
